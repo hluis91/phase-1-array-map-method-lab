@@ -12,5 +12,68 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials
+    return tutorials.map(tutorial => {
+    const tutorialSplit = tutorial.split(' ')
+    const TutorialSplit = tutorialSplit.map(eachWord => {
+      return eachWord[0].toUpperCase() + eachWord.slice(1);  
+    }) 
+    let allTitleCased = TutorialSplit.join(' ')
+    return allTitleCased;
+  })
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const titleCased = () => {
+//   return tutorials.map(tutorial => {
+//     const tutorialSplit = tutorial.split(' ')
+//     const TutorialSplit = tutorialSplit.map(eachWord => {
+//       return eachWord[0].toUpperCase() + eachWord.slice(1);  
+//     }) 
+//     let allTitleCased = TutorialSplit.join(' ')
+//     console.log(allTitleCased);
+//     return allTitleCased;
+//   })
+// }
+
+// // titleCased();
